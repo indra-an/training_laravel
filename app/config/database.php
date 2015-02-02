@@ -65,10 +65,10 @@ return array(
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
-			'host'     => 'localhost',
-			'database' => 'crud_img',
-			'username' => 'admin',
-			'password' => 'teudipassword',
+			'host'     => 'ec2-107-20-197-146.compute-1.amazonaws.com',
+			'database' => 'de08uj32qvpfdj',
+			'username' => 'gphkecypstgrdu',
+			'password' => 'KfqWMSe4CiblbrO16JyzbtvCOK',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
