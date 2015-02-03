@@ -39,7 +39,8 @@ Route::filter('auth', function()
 	{
 		if (Request::ajax())
 		{
-			return Response::make('Unauthorized', 401);
+			//return Response::make('Unauthorized', 401);
+			return Response::json(View::make('sessions.form')->render());
 		}
 		else
 		{

@@ -16,7 +16,13 @@
 
       </button>
 
-      <a href="#" class = "navbar-brand">Training Laravel</a>
+      <a href="#" class = "navbar-brand">
+        @if(Session::has('username'))
+          {{Session::get('username')}}
+        @else
+          Training Laravel
+        @endif
+      </a>
 
     </div>
 
@@ -28,6 +34,20 @@
 
       <li>{{link_to('img/create', 'Upload Photo/Image')}}</li>
 
+      <li><a href="#" class="articles_link">Articles</a></li>
+      
+      <li><a href="#" class="signup_link">Signup</a></li>
+
+    @if (Auth::check())
+     <li>
+      {{ Form::open(array('route' => array('sessions.destroy'), 'method' => 'delete')) }}
+       {{ Form::submit('Logout', array('class' => 'btn btn-normal')) }}
+      {{ Form::close() }}
+     </li>
+    @else
+     <li>{{link_to('sessions/create', 'Login')}}</li>
+    @endif
+    </div>
 
     </div>
 

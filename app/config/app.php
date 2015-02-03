@@ -121,10 +121,11 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		//'Way\Generators\GeneratorsServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
 		'Codesleeve\AssetPipeline\AssetPipelineServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
-		//'Barryvdh\Debugbar\ServiceProvider'
+		'Maatwebsite\Excel\ExcelServiceProvider',
+		'Barryvdh\Debugbar\ServiceProvider'
 
 	),
 
@@ -193,6 +194,7 @@ return array(
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
 		'Image' 			=> 'Intervention\Image\Facades\Image',
+		'Excel'				=> 'Maatwebsite\Excel\Facades\Excel',
 
 	),
 

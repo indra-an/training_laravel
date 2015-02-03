@@ -50,8 +50,9 @@
 
         </div>
 
-      </div>
-
+      </div>     
+       {{stylesheetLinkTag()}}
+       {{javascript_include_tag()}}
     </body>
 
   </html>
